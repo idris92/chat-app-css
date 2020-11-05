@@ -1,0 +1,263 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* Section 1 */
+
+
+.section{
+    display: flex;
+}
+.section-1{
+    width: 50%;
+    margin-right: 30px;
+}
+.phone{
+    width: 245px;
+    height: 500px;
+    margin: 50px 10px 50px auto;
+    padding: 0px ;
+    border: 10px solid white;
+    border-radius: 30px;
+    background-color:#e9e9e8;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.3);
+    overflow: hidden;
+    animation: drop 1.5s ease;
+}
+
+.round{
+    background-color: white;
+    border-radius: 100px;
+    width: 120px;
+    height: 30px;
+    padding: 0;
+    margin-top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+
+}
+.head{
+    background: linear-gradient(180deg, #9933ff, #cc33ff);
+    margin-top: -20px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+
+}
+
+.head img{
+    border-radius: 100%;
+    width:30px;
+    height: 30px;
+    border: 2px solid white;
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.name h1{
+    padding:0;
+    margin-top: 20px ;
+    margin-bottom: 0;
+    font-size: 10px;
+    color: #fff;
+    letter-spacing: 0.8px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.name h2{
+    padding: 0;
+    margin-top: 3px;
+    font-size: 6px;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 0.8px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.section-2{
+    width: 50%;
+    margin: 200px 50px;
+}
+
+.chat-1{
+    background-color: rgba(204,204,204, 0.4);
+    border-radius: 10px;
+    width: 50%;
+    padding: 5px ;
+    margin: 7px;
+}
+
+.chat-1 p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+}
+
+.dog-image{
+    display: flex;
+}
+
+.dog-image .img1{
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: 10px;
+    border-radius: 10px;
+    
+}
+
+.dog-image .img2{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.dog-image .img3{
+    width: 40px;
+    height: 40px;
+    margin-left: 0;
+    margin-right: 10px;
+    border-radius: 10px;
+    
+}
+.reply{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    background-color:#fff;
+    border-radius: 10px;
+    width: 50%;
+    padding: 5px;
+    margin-left: auto;
+    margin-top: 7px;
+    margin-right: 10px;
+
+}
+
+.price{
+    display: flex;
+    background: linear-gradient(90deg, #9933ff, #cc33ff);
+    width: 50%;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+.price .time{
+    color: rgba(255,255,255,0.5);
+    padding-left: 5px;
+
+}
+
+.price .amount{
+    color: rgba(255,255,255,0.8);
+    padding-left: 15px;
+    font-weight: 900;
+}
+
+input{
+    border: none;
+    border-radius: 50px;
+    margin: 5px;
+    padding: 10px;
+    width: 85%;
+    font-size: 10px;
+}
+.msg-box{
+    margin-bottom: 10px;
+}
+
+/* Section 2 */
+
+.section-2{
+    width: 50%;
+    line-height: 2;
+    animation: text-drop 1.5s ease;
+}
+.section-2 p{
+    width: 70%;
+    color: rgba(51,51,102,0.5);
+}
+.section-2 h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 150%;
+    color: #333366;
+}
+
+
+/* background shape */
+
+.background{
+    position: absolute;
+    width: 400px;
+    height: 800px;
+    border-radius: 200px;
+    background: linear-gradient(90deg, #333366, #cc33ff);
+    z-index: -1;
+    bottom:60px;
+    left: -20px;
+}
+
+
+/* footer */
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    margin-top: 10px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* media query section */
+
+@media screen and (max-width:1000px){
+.section{
+    flex-direction: column;
+}
+.section-1{
+    width: 100%;
+}
+.phone{
+    margin: 50px auto;
+}
+.background{
+    bottom:150px;
+    left: -50px;
+}
+.section-2{
+    width: 100%;
+    text-align: center;
+}
+.section-2 p{
+    width: 80%;
+}
+.section-2 h2{
+    width:80%;
+}
+}
+
+/* keyframe */
+
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes text-drop{
+    0%{
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
